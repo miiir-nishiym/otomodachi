@@ -1,0 +1,46 @@
+@charset "UTF-8";
+body {
+    margin: 0;
+    background-color: #221F34;
+}
+
+header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 0px;
+    background-image: url(images/taitoru.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    min-height: 100vh;
+}
+
+.main-nav {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    background-color: black;
+}
+
+article {
+    text-align: center;
+    color: white;
+    padding: 100px;
+}
+
+footer {
+    margin: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: white;
+    text-align: center;
+    background-color: black;
+}
+
+@media (max-width:600px) {
+    header {
+        background-image: url(images/taitoru-tate.PNG);
+    }
+}

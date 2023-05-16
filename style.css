@@ -1,18 +1,26 @@
 @charset "UTF-8";
-body {
-    margin: 0;
-    background-color: #221F34;
-}
+
 
 header {
     padding-top: 20px;
     padding-bottom: 20px;
     margin-bottom: 0px;
-    background-image: url(images/taitoru.png);
+    background-image: url(images/taitorugamen.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     min-height: 100vh;
+}
+
+
+header img {
+    width: 100%;
+    height: auto;
+}
+
+body {
+    margin: 0;
+    background-color: #221F34;
 }
 
 nav {
@@ -52,6 +60,11 @@ article {
     padding: 100px;
 }
 
+article img {
+    width: 100%;
+    height:auto;
+}
+
 footer {
     margin: 0px;
     padding-top: 20px;
@@ -65,4 +78,5 @@ footer {
     header {
         background-image: url(images/taitoru-tate.PNG);
     }
+    
 }

@@ -5,6 +5,8 @@
         <title>おともだち</title>
         <meta name="description" content="オリジナル謎解きゲーム">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+        <script src="script.js"></script>
         <link rel="stylesheet" href="style.css">
     </head>
 
@@ -13,54 +15,83 @@
 
         <header>
           <div class="mv">
-            <img src="images/taitorugamen.png" class=bigmv alt="タイトル画面">
+            <img src="images/taitorugamen2.png" class="bigmv" alt="タイトル画面">
             <img src="images/taitoru_tate.png" class="minimv" alt="タイトル画面">
           </div>  
           
         </header>
 
         
+        
 
         <nav class="main">
-            <ul>
-                <li><a href="#">ストーリー</a></li>
-                <li><a href="#">キャラクター</a></li>
-                <li><a href="#">システム</a></li>
-                <li><a href="#">スタッフ</a></li>
+            <ul id="page-link">
+                <li><a href="#story">ストーリー</a></li>
+                <li><a href="#character">キャラクター</a></li>
+                <li><a href="#system">システム</a></li>
+                <li><a href="#infomation">インフォメーション</a></li>
             </ul>
         </nav>
 
+        
+
+        <div class="float-button__wrap">
+            <a href="#">TOPへ戻る</a>
+        </div>
+
+        
+
         <section>
             
-            <article>
-                <h2>ストーリー</h2>
-                <p>アイウエオかきくけこ</p>
-                <img src="images/story.png" alt="ストーリー">
+            <article id="story">
+                <img src="images/menu1.png" class="menu" alt="ストーリー">
+                
+                <div class="element">
+                    <img src="images/story.png" class="story" alt="あらすじ">
+                </div>
+                
                 
             </article>
             
-            <article>
-                <h2>キャラクター</h2>
-                <p>kmiciaciauhciajnscaueuascjnas</p>
-                <img src="images/inukai.png" alt="犬飼ちゃん">
-                <img src="images/usapyon_character.png" alt="うさぴょん">
+            <article id="character">
+
+                <img src="images/menu2.png" class="menu" alt="キャラクター">
+
+                <div class="element">
+                    <img src="images/inukai2.png" alt="犬飼ちゃん">
+                </div>
+                <div class="element">
+                    <img src="images/usapyon2.png" alt="うさぴょん">
+                </div>
+                
+                
             </article>
 
-            <article>
-                <h2>システム説明</h2>
-                <p>acnlahbayubdkjnalieowjfhukeblI+</p>
-                <img src="images/system.png" alt="システム画面">
+            <article id="system">
+                <img src="images/menu3.png" class="menu" alt="システム設定">
+                <div class="element">
+                    <img src="images/system.png" alt="システム画面">
+                </div>
+
+                <div class="element">
+                    <p>①：アイテムボックス</p>
+                    <p>②：操作キャラクター</p>
+                    <p>③：操作方法</p>
+                    
+                </div>
+               
             </article>
 
-            <article>
-                <h2>インフォメーション</h2>
+            <article id="infomation">
+                <img src="images/menu4.png" class="menu" alt="インフォメーション">
 
                 <h3>制作スタッフ</h3>
                 <p>『おともだち』製作委員会（仮）</p>
 
                 <h3>ダウンロード</h3>
-                <a href="teamF_0128.exe.zip">Windows用</a>
-                <a href="teamF_0128.app/">Mac用</a>
+                <a href="game/teamF_0128.exe.zip">Windows用</a>
+                <a href="game/teamF_0128.app/">Mac用</a>
+                
 
             </article>
             
@@ -70,6 +101,8 @@
             <p>&copy; おともだち</p>
         </footer>
     
+
+        
     </body>
 </html>
 
